@@ -1,0 +1,140 @@
+body{
+    background-color: #010103;
+}
+@font-face {
+    font-family: Anton;
+    src: url(fonts/Anton/Anton-Regular.ttf);
+}
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+.navbar-brand{
+    font-family: Oswald;
+}
+#bigText{
+    font-family: Anton;
+    font-size: 7.5vw;
+}
+.orangeText{
+    color:#EE891C;
+}
+.pictures{
+    display: flex;
+    overflow: hidden;
+    gap:1%;
+}
+.flexImg{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.flexImg img{
+    transition: all ease 0.3s;
+}
+.flexImg img:hover{
+    transform: scale(1.05);
+    transition: all ease 0.3s;
+}
+.col img{
+    border-radius: 15px;
+}
+.col1, .col2{
+    width: 26%;
+}
+.col3{
+    width: 44%;
+}
+.info{
+    background-color: #121220;
+    padding: 2% 4%;
+    border-radius: 25px;
+    box-shadow: 0px 20px 75px rgba(238, 136, 28, 0.7)
+}
+.info-container{
+    display: flex;
+}
+.infoDiv{
+    width: 50%;
+}
+.fDiv{
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto';
+}
+.tDiv{
+    font-family: Bebas;
+}
+.sDiv{
+    display: flex;
+    flex-direction: column;
+}
+.sColDiv{
+    display: flex;
+}
+.iText{
+    width: 60%;
+}
+.iPrice{
+    margin-left: 15%;
+}
+.faq{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.faq-btn{
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.hr{
+    color: white;
+}
+
+.footer{
+    background-color: #121220;
+    color: white;
+    padding: 3% 0 3% 0;
+    margin-top: 2%;
+}
+.footer .row{
+    margin: 0;
+}
+.socmeds{
+    flex-direction: row;
+}
+.socmeds img{
+    width: 30px;
+    margin: 0 5px;
+}
+
+@media only screen and (max-width: 991px) {
+    .sColDiv{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .iText{
+        width: 100%;
+    }
+    .iPrice{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    .iPrice p{
+        font-size: 20px;
+    }
+  }
